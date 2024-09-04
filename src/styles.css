@@ -1,5 +1,43 @@
-/* styles.css */
 body {
-    background-color: rebeccapurple;
-  }
-  
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #134a59;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: #0d9dad;
+  color: white;
+  padding: 15px;
+}
+
+button {
+ margin-top: 20px;
+ border-radius: 10px;
+}
+
+.main-content {
+  width: 80%;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+footer {
+  background-color: #134a59;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}

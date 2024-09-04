@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- The Modal -->
+     <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" required><br><br>
+                <label for="taskDate">Date:</label>
+                <input type="date" id="taskDate" name="taskDate" required><br><br>
+                <label for="taskPriority">Priority:</label>
+                <select id="taskPriority" name="taskPriority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select><br><br>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
