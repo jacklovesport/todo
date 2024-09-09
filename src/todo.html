@@ -13,17 +13,38 @@
         <aside class="sidebar">
             <h2>Sidebar</h2>
             
-                <button class="add">Add</button>
-                <button class="Search">Search</button>
-                <button class="ad">Add</button>
-                <button class="a">Ahd</button>
+                <button id="addTaskBtn">Add Task</button>
+              
+               
         </aside>
         <main class="main-content">
             <h2>Main Content</h2>
+            <ul id="taskList"></ul>
         </main>
     </div>
     <footer>
         <p>Footer</p>
     </footer>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" required><br><br>
+                <label for="taskDate">Date:</label>
+                <input type="date" id="taskDate" name="taskDate" required><br><br>
+                <label for="taskPriority">Priority:</label>
+                <select id="taskPriority" name="taskPriority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit" id="submitButton">Add Task</button>
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
