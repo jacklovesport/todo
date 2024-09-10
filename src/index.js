@@ -30,7 +30,7 @@ window.onclick = function(event) {
  const li = document.createElement('li');
  li.classList.add('task-item');
 
- const colorBox = document.createElement('button');
+ const colorBox = document.createElement('span');
  colorBox.classList.add('color-box');
  switch (taskPriority) {
      case 'low':
@@ -64,4 +64,19 @@ window.onclick = function(event) {
  taskForm.reset();
  modal.style.display = 'none';
  
+}
+
+const proModal = document.getElementById('proModal');
+const proList = document.getElementById('proList');
+const proForm = document.getElementById('proForm');
+
+const addProBtn = document.getElementById('addProBtn');
+const proSubmitBtn = document.getElementById('proSubmitBtn');
+
+addProBtn.onclick = function() {
+    modal.style.display = 'block';
+}
+
+proSubmitBtn.onclick = function() {
+    
 }

@@ -10,15 +10,21 @@
         <h1>My very average ToDo app.</h1>
     </header>
     <div class="container">
+        <div class="left">
         <aside class="sidebar">
-            <h2>Sidebar</h2>
+            <h2>Tasks</h2>
             
                 <button id="addTaskBtn">Add Task</button>
-              
-               
         </aside>
+        <aside class="sidebar">
+            <h2>Projects</h2>
+            
+                <button id="addProBtn">Add Project</button>
+        </aside>
+        </div>
+
         <main class="main-content">
-            <h2>Main Content</h2>
+            <h2>Tasks</h2>
             <ul id="taskList"></ul>
         </main>
     </div>
@@ -46,5 +52,22 @@
         </div>
     </div>
     
+    <div id="proModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Project</h2>
+            <form id="proForm">
+                <label for="proName">Project Name:</label>
+                <input type="text" id="proName" name="proName" required><br><br>
+                <label for="proDate">Date:</label>
+                <input type="date" id="proDate" name="proDate" required><br><br>
+                <label for="proDes">Description:</label>
+                <input type="text" id="proDes" name="proDes" required><br><br>
+               
+                </select><br><br>
+                <button type="submit" id="proSubmitBtn">Add Task</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

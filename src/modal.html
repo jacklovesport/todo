@@ -27,5 +27,25 @@
             </form>
         </div>
     </div>
+
+    <div id="proModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <form id="proForm">
+                <label for="proName">Task Name:</label>
+                <input type="text" id="proName" name="proName" required><br><br>
+                <label for="proDate">Date:</label>
+                <input type="date" id="proDate" name="proDate" required><br><br>
+                <label for="proPriority">Priority:</label>
+                <select id="proPriority" name="proPriority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select><br><br>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

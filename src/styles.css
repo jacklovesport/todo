@@ -14,19 +14,35 @@ header, footer {
   display: flex;
   min-height: 80vh;
 }
-
-.sidebar {
+.left {
   display: flex;
   flex-direction: column;
   width: 20%;
+  background-color: #0d9dad;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
   background-color: #0d9dad;
   color: white;
   padding: 15px;
 }
 
+.sidebar h2 {
+  margin-top: 0;
+}
+
 button {
- margin-top: 20px;
- border-radius: 10px;
+  background-color: #fff;
+  color: #0d9dad;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e0e0e0;
 }
 
 .main-content {
@@ -35,33 +51,33 @@ button {
   background-color: #f4f4f4;
 }
 
-/* Modal background */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal content */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
   max-width: 600px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* The close button */
+
 .close {
   color: #aaa;
   float: right;
@@ -76,7 +92,7 @@ button {
   cursor: pointer;
 }
 
-/* Form elements */
+
 form {
   display: flex;
   flex-direction: column;
@@ -97,7 +113,7 @@ select {
 }
 
 button[type="submit"] {
-  background-color: #134a59; /* Green */
+  background-color: #134a59;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -115,7 +131,7 @@ button[type="submit"]:hover {
   background-color: #134a59;
 }
 
-/* List item styling */
+
 .task-item {
     display: flex;
     align-items: center;
@@ -126,27 +142,28 @@ button[type="submit"]:hover {
     background-color: #f9f9f9;
     border-radius: 4px;
 }
-/* Color Box */
+
 .color-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 60px; /* Minimum width */
-  min-height: 24px; /* Minimum height */
-  padding: 2px 8px; /* Padding to give some space around the text */
+  min-width: 60px; 
+  min-height: 24px; 
+  padding: 2px 8px; 
   margin-left: 10px;
   border-radius: 4px;
-  color: white; /* Text color */
+  color: rgb(0, 0, 0); 
+  border: solid black;
   font-weight: bold;
-  text-align: center; /* Center text */
-  font-size: 14px; /* Adjust font size as needed */
-  box-sizing: border-box; /* Ensure padding is included in the total width and height */
+  text-align: center; 
+  font-size: 14px; 
+  box-sizing: border-box; 
 }
 
 
-/* Delete button styling */
+
 .delete-button {
-    background-color: #0d9dad; /* Red */
+    background-color: #0d9dad; 
     color: white;
     border: none;
     padding: 5px 10px;
