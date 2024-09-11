@@ -1,4 +1,3 @@
-// webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -19,6 +18,14 @@ module.exports = {
       template: "./src/todo.html",
     }),
   ],
+  resolve: {
+    fallback: {
+      "constants": require.resolve("constants-browserify"),
+      "path": require.resolve("path-browserify"),
+      "util": require.resolve("util/")
+      // Add other fallbacks as needed
+    }
+  },
   module: {
     rules: [
       {

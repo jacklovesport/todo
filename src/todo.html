@@ -18,8 +18,9 @@
         </aside>
         <aside class="sidebar">
             <h2>Projects</h2>
-            
+    
                 <button id="addProBtn">Add Project</button>
+                <ul id="proList"></ul>
         </aside>
         </div>
 
@@ -47,6 +48,7 @@
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
+                
                 <button type="submit" id="submitButton">Add Task</button>
             </form>
         </div>
@@ -54,18 +56,14 @@
     
     <div id="proModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="pro-close">&times;</span>
             <h2>Add New Project</h2>
             <form id="proForm">
                 <label for="proName">Project Name:</label>
                 <input type="text" id="proName" name="proName" required><br><br>
-                <label for="proDate">Date:</label>
-                <input type="date" id="proDate" name="proDate" required><br><br>
-                <label for="proDes">Description:</label>
-                <input type="text" id="proDes" name="proDes" required><br><br>
-               
+
                 </select><br><br>
-                <button type="submit" id="proSubmitBtn">Add Task</button>
+                <button type="submit" id="proSubmitBtn">Add Project</button>
             </form>
         </div>
     </div>
